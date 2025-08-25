@@ -12,8 +12,8 @@ Fullstack
 
 ## Deployed App
 
-- Frontend: https://deployed-frontend-link.com
-- Backend: https://deployed-backend-link.com
+- Frontend: https://resume-builder-frontend-5yy4.onrender.com
+- Backend: https://resume-builder-backend-0x50.onrender.com
 - Database: MongoDB Atlas (cloud-hosted)
 
 ## Directory Structure

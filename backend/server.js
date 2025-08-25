@@ -19,7 +19,7 @@ app.use("/api/resume", resumeRouter)
 app.use("/uploads",
     express.static(path.join(__dirname, "uploads"), {
         setHeaders: (res, _path) => {
-            res.set("Access-Control-Allow-Origin", "https://resume-builder-frontend-5yy4.onrender.com")
+            res.set("Access-Control-Allow-Origin", "https://resume-builder-frontend-5yy4.onrender.com/")//"http://localhost:5173"
         }
     })
 )
