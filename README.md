@@ -38,11 +38,7 @@ resume-builder/
 
 ## Video Walkthrough of the Project
 
-📹 Link to project walkthrough video
-
-## Video Walkthrough of the Codebase
-
-📹 Link to code walkthrough video
+https://drive.google.com/file/d/1ppFAJ4i9ttLjXetk274APLZuto4jKnAv/view?usp=sharing
 
 ## Features
 
