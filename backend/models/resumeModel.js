@@ -19,30 +19,13 @@ const resumeSchema = new mongoose.Schema({
     },
     profileInfo: {
         profilePreviewUrl: String,
-        fullName: {
-            type: String,
-            required: true,
-            minlength: 3,
-            maxlength: 50
-        },
-        designation: {
-            type: String,
-            required: true,
-            minlength: 3,
-            maxlength: 50
-        },
+        fullName: String,
+        designation: String,
         summary: String
     },
     contactInfo: {
-        email: {
-            type: String,
-            required: true,
-            match: [/^\S+@\S+\.\S+$/, "Please enter a valid email address"]
-        },
-        phone: {
-            type: String,
-            match: [/^\+?[0-9\s()-]{7,20}$/, "Please enter a valid phone number"]
-        },
+        email: String,
+        phone: String,
         location: String,
         linkedin: String,
         github: String,
@@ -50,8 +33,8 @@ const resumeSchema = new mongoose.Schema({
     },
     workExperience: [
         {
-            company: { type: String, minlength: 3 },
-            role: { type: String, minlength: 3 },
+            company: String,
+            role: String,
             startDate: String,
             endDate: String,
             description: String
@@ -59,22 +42,22 @@ const resumeSchema = new mongoose.Schema({
     ],
     education: [
         {
-            degree: { type: String, minlength: 3, required: true },
-            institution: { type: String, minlength: 3, maxlength: 50, required: true },
-            startDate: { type: String, required: true },
-            endDate: { type: String, required: true }
+            degree: String,
+            institution: String,
+            startDate: String,
+            endDate: String,
         }
     ],
     skills: [
         {
-            name: { type: String, minlength: 3, required: true },
+            name: String,
             progress: Number
         }
     ],
     projects: [
         {
-            title: { type: String, minlength: 3, required: true },
-            description: { type: String, minlength: 3, required: true },
+            title: String,
+            description: String,
             github: String,
             liveDemo: String
         }
@@ -83,16 +66,12 @@ const resumeSchema = new mongoose.Schema({
         {
             title: String,
             issuer: String,
-            year: {
-                type: Number,
-                min: 1950,
-                max: new Date().getFullYear(),
-            }
+            year: String,
         }
     ],
     languages: [
         {
-            name: { type: String, minlength: 3, required: true },
+            name: String,
             progress: Number
         }
     ],
